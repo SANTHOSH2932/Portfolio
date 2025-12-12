@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh R - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #4a90e2, #6a89cc);
+            color: #fff;
+            padding: 120px 20px;
+            text-align: center;
+            border-bottom: 5px solid #6a89cc;
+        }
+
+        header h1 {
+            font-size: 4em;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.4em;
+            margin-top: 15px;
+            font-weight: 400;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* NAV */
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 18px;
+            font-weight: 500;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 20px;
+            margin: 40px auto;
+            width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            font-size: 2.2em;
+            font-weight: 600;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+
+        /* Remove dots in Skills & Projects */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            font-size: 1.15em;
+            line-height: 1.5;
+        }
+
+        /* SECTION COLORS */
+        #about { background-color: #e3f2fd; }
+        #skills { background-color: #f0f4c3; }
+        #projects { background-color: #ffccbc; }
+        #certificates { background-color: #f8bbd0; }
+        #resume { background-color: #d1c4e9; }
+        #contact { background-color: #c8e6c9; }
+
+        /* CERTIFICATE GRID */
+        .certificate-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .certificate-card {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .certificate-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .certificate-info {
+            position: absolute;
+            bottom: 0;
+            background: rgba(74, 144, 226, 0.9);
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            font-size: 1.05em;
+            font-weight: 500;
+            transform: translateY(100%);
+            transition: 0.3s ease;
+        }
+
+        .certificate-card:hover .certificate-info {
+            transform: translateY(0);
+        }
+
+        /* BUTTON */
+        .btn {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #34495e;
+            color: #ff6b6b;
+            text-align: center;
+            padding: 25px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="profile.jpeg" class="profile-photo">
+        <h1>Santhosh R</h1>
+        <p>Aspiring Data Analyst | Skilled in Excel, SQL, Power BI, Python, Java</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an aspiring Data Analyst skilled in Excel, SQL, Power BI, and Python. I enjoy transforming raw data into actionable insights through dashboards, automation, and visualizations. With my Computer Science background, I bring strong analytical and problem-solving skills into every project.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Data Skills:</strong> Excel, SQL, Power BI, Data Cleaning, Visualization, Pivot Tables, DAX</li>
+            <li><strong>Programming:</strong> Java, Python, HTML, CSS</li>
+            <li><strong>Tools:</strong> Power BI, MySQL, Excel Dashboards</li>
+            <li><strong>Soft Skills:</strong> Problem Solving, Critical Thinking, Communication</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Company Information Extractor</strong><br>
+                Developed a Python automation tool to extract and organize company-related information.
+            </li>
+            <li>
+                <strong>Sales Dashboard – Power BI</strong><br>
+                Built an interactive dashboard to analyze KPIs, customer trends, and performance insights.
+            </li>
+            <li>
+                <strong>Data Cleaning & Analysis – Excel</strong><br>
+                Cleaned, transformed, and visualized datasets using Excel formulas, charts, and pivot tables.
+            </li>
+        </ul>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates">
+        <h2>Certificates</h2>
+
+        <div class="certificate-grid">
+
+            <div class="certificate-card">
+                <img src="KSR certificate.jpg" class="certificate-image">
+                <div class="certificate-info">Bitcoin & Blockchain Technology - KSR College</div>
+            </div>
+
+            <div class="certificate-card">
+                <img src="infosys certificate.jpg" class="certificate-image">
+                <div class="certificate-info">AI Internship - Infosys</div>
+            </div>
+
+            <div class="certificate-card">
+                <img src="NPTEL cloud.jpg" class="certificate-image">
+                <div class="certificate-info">Cloud Computing - NPTEL</div>
+            </div>
+
+            <div class="certificate-card">
+                <img src="NPTEL iot.jpg" class="certificate-image">
+                <div class="certificate-info">Internet of Things - NPTEL</div>
+            </div>
+
+            <div class="certificate-card">
+                <img src="salesforce certificate.jpg" class="certificate-image">
+                <div class="certificate-info">Salesforce Developer Internship</div>
+            </div>
+
+            <div class="certificate-card">
+                <img src="SNS certificate.jpg" class="certificate-image">
+                <div class="certificate-info">AI Workshop - SNS College</div>
+            </div>
+
+            <div class="certificate-card">
+                <img src="AWS certificate.jpg" class="certificate-image">
+                <div class="certificate-info">AWS Cloud Practitioner</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+        <h2>Download My Resume</h2>
+        <a href="Santosh_Resume.pdf" download class="btn">Download Resume</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sansanthosh004@gmail.com">sansanthosh004@gmail.com</a></p>
+        <p>Phone: +91 6379092932</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/santhosh-r-48207028a">View Profile</a></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 Santhosh R</p>
+    </footer>
+
+</body>
+</html>
